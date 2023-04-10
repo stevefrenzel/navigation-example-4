@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/focus.css" />
+    <link rel="stylesheet" href="styles/navigation.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
+    <link rel="stylesheet" href="styles/sub-menu.css" />
+    <title>Navigation with submenus and with hamburger menu</title>
+  </head>
+  <body>
+    <a href="#main" id="skip-link">Skip to main content</a>
+
+    <!-- Primary navigation -->
+    <nav aria-label="Primary" id="primary-navigation">
+      <ul id="primary" role="list">
+        <li id="logo">
+          <a aria-label="Home" href="/">
+            <img src="images/logo.svg" alt="" width="200" height="auto" />
+          </a>
+        </li>
+        <li>
+          <button aria-expanded="false" class="sub-menu-button" type="button">
+            Joey
+            <img alt="" height="44" src="images/chevron-down.svg" width="44" />
+          </button>
+          <ul class="sub-menu closed" role="list">
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#sandwiches">Sandwiches</a></li>
+            <li><a href="#ladies">Ladies</a></li>
+          </ul>
+        </li>
+        <li><a href="#monica">Monica</a></li>
+        <li>
+          <button aria-expanded="false" class="sub-menu-button" type="button">
+            Ross
+            <img alt="" height="44" src="images/chevron-down.svg" width="44" />
+          </button>
+          <ul class="sub-menu closed" role="list">
+            <li><a href="#dinosaurs">Dinosaurs</a></li>
+            <li><a href="#divorces">Divorces</a></li>
+          </ul>
+        </li>
+        <li><a href="#rachel">Rachel</a></li>
+        <li><a href="#chandler">Chandler</a></li>
+        <li><a href="#phoebe">Phoebe</a></li>
+      </ul>
+      <button
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+        aria-label="Menu"
+        id="menu-button"
+        type="button"
+      >
+        <img
+          alt=""
+          height="44"
+          id="menu-icon"
+          src="images/menu.svg"
+          width="44"
+        />
+      </button>
+    </nav>
+
+    <!-- Secondary navigation -->
+    <nav aria-label="Secondary" id="menu">
+      <button
+        aria-controls="mainnav"
+        aria-label="Close menu"
+        id="close-button"
+        type="button"
+      >
+        <img alt="" height="44" src="images/close.svg" width="44" />
+      </button>
+      <ul id="hamburger-menu-links" role="list">
+        <li>
+          <button
+            aria-expanded="false"
+            class="hamburger-sub-menu-button"
+            type="button"
+          >
+            Joey
+            <img alt="" height="44" src="images/chevron-down.svg" width="44" />
+          </button>
+          <ul class="hamburger-sub-menu closed" role="list">
+            <li><a href="#pizza">Pizza</a></li>
+            <li><a href="#sandwiches">Sandwiches</a></li>
+            <li><a href="#ladies">Ladies</a></li>
+          </ul>
+        </li>
+        <li><a href="#monica">Monica</a></li>
+        <li>
+          <button
+            aria-expanded="false"
+            class="hamburger-sub-menu-button"
+            type="button"
+          >
+            Ross
+            <img alt="" height="44" src="images/chevron-down.svg" width="44" />
+          </button>
+          <ul class="hamburger-sub-menu closed" role="list">
+            <li><a href="#dinosaurs">Dinosaurs</a></li>
+            <li><a href="#divorces">Divorces</a></li>
+          </ul>
+        </li>
+        <li><a href="#rachel">Rachel</a></li>
+        <li><a href="#chandler">Chandler</a></li>
+        <li><a href="#phoebe">Phoebe</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main content -->
+    <main id="main">
+      <br />
+      <h1>Navigation with submenus and with hamburger menu</h1>
+      <br />
+      <p>
+        Wafer bear claw lemon drops cheesecake pudding pastry. Biscuit tiramisu
+        I love cookie cheesecake tiramisu marzipan. Cake gummi bears I love
+        gummi bears chupa chups topping cake.
+      </p>
+      <br />
+      <a href="#">More about cupcakes</a>
+      <hr aria-hidden="true" />
+      <p>
+        Topping lollipop carrot cake candy cheesecake halvah cake gummi bears
+        macaroon. Danish candy canes chupa chups donut oat cake. I love
+        chocolate cake I love bear claw sweet roll fruitcake tart cookie bonbon.
+      </p>
+      <a href="#">Conspiracies about cupcakes</a>
+      <hr aria-hidden="true" />
+      <p>
+        Fruitcake wafer jujubes croissant macaroon bear claw lemon drops I love
+        halvah. Caramels I love dessert sweet topping chocolate cake. Apple pie
+        chocolate bar chupa chups apple pie candy. Chocolate bar cotton candy
+        donut biscuit biscuit.
+      </p>
+      <a href="#">Am I a cheesecake?</a>
+      <hr aria-hidden="true" />
+      <p>
+        I love halvah marshmallow chocolate bar sweet roll. Sugar plum tart oat
+        cake croissant marzipan pudding caramels tart. Chocolate bar jujubes
+        macaroon tart cake I love dessert tart. Cheesecake gummi bears I love
+        brownie caramels.
+      </p>
+      <a href="#">Diabetes is not a myth</a>
+      <hr aria-hidden="true" />
+      <p>
+        Cotton candy dessert sugar plum tiramisu bear claw halvah. Donut
+        gingerbread ice cream I love jelly beans gingerbread. Chocolate cake
+        soufflé macaroon ice cream chocolate. Marzipan jelly beans chupa chups
+        tootsie roll shortbread powder I love cotton candy.
+      </p>
+      <a href="#">Why sweet is sometimes better then bitter</a>
+      <hr aria-hidden="true" />
+      <p>
+        Wafer bear claw lemon drops cheesecake pudding pastry. Biscuit tiramisu
+        I love cookie cheesecake tiramisu marzipan. Cake gummi bears I love
+        gummi bears chupa chups topping cake.
+      </p>
+      <a href="#">Delicious recipes</a>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
