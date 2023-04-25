@@ -25,27 +25,9 @@ function makeInert(params) {
   if (params) {
     mainContent.setAttribute('inert', '');
     skipLink.style.display = 'none';
-
-    // "inert" is currently not supported in Firefox, so we need the following hack
-    mainContent.setAttribute('aria-hidden', 'true');
-    const interactiveElements = main.querySelectorAll(
-      'a, button, input, select, textarea, [tabindex]'
-    );
-    interactiveElements.forEach((element) => {
-      element.setAttribute('tabindex', '-1');
-    });
   } else {
     mainContent.removeAttribute('inert', '');
     skipLink.style.display = 'initial';
-
-    // "inert" is currently not supported in Firefox, so we need the following hack
-    mainContent.setAttribute('aria-hidden', 'false');
-    const interactiveElements = main.querySelectorAll(
-      'a, button, input, select, textarea, [tabindex]'
-    );
-    interactiveElements.forEach((element) => {
-      element.removeAttribute('tabindex');
-    });
   }
 }
 
